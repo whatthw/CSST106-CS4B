@@ -3,7 +3,7 @@
 
 https://github.com/user-attachments/assets/7edf1f21-5b42-4c83-9657-3517f9910ae9
 
-Uploading comppp.mp4…
+
 # Intoduction to Computer Vision 
 Computer Vision is a field of artificial intelligence that deals with teaching computers to understand and interpret visual information, such as images and videos. It's essentially giving machines the ability to "see" and make sense of the world around them.
 
@@ -19,16 +19,19 @@ Scientific image analysis, medical imaging systems, industrial inspection system
 ## Key Tasks in Image Processing
 
 ### Image Segmentation
+
 Objective- Divide an image into regions or segments that represent different objects or parts of the scene.
 Techniques- Thresholding, clustering (e.g., K-means), region growing, and edge detection.
 Applications- Identifying tumors in medical images, segmenting objects in autonomous driving.
 
 ### Feature Extraction
+
 Objective- Extract meaningful attributes or characteristics from an image that can be used for further analysis.
 Techniques- Edge detection (e.g., Canny edge detector), corner detection (e.g., Harris corner detector), texture analysis.
 Applications- Face recognition, object tracking, and scene classification.
 
 Geometric Modifications
+
 Objective- Transform images in terms of scaling, rotation, or warping to correct distortions or align them for further processing.
 Techniques- Affine transformations, perspective corrections, and image registration.
 Applications- Aligning satellite images, correcting lens distortions.
@@ -39,37 +42,45 @@ Techniques- Histogram equalization, noise reduction (e.g., Gaussian filter), sha
 Applications- Enhancing medical scans, improving visibility in low-light conditions.
 
 ### Image Compression
+
 Objective- Reduce the size of an image file while preserving as much information as possible.
 Techniques- Lossy compression (e.g., JPEG), lossless compression (e.g., PNG).
 Applications- Reducing storage requirements for images, speeding up image transmission.
 
 ### Image Reconstruction
+
 Objective- Restore or reconstruct images from incomplete, noisy, or distorted data.
 Techniques- Inpainting, super-resolution, and interpolation.
 Applications- Repairing damaged images, enhancing resolution of old photographs.
 Applications of Image Processing
 
 ### Scientific Image Analysis
+
 Objective- Analyze images for scientific research and experimentation.
 Examples- Analyzing astronomical images to study celestial bodies, examining microscopic images in biology.
 
 ### Medical Imaging Systems
+
 Objective- Aid in diagnosing and treating medical conditions through imaging techniques.
 Examples- MRI, CT scans, and X-ray images to detect and monitor diseases.
 
 ### Industrial Inspection Systems
+
 Objective- Inspect and ensure the quality of products in manufacturing processes.
 Examples- Automated inspection of electronic components, detecting defects in manufacturing.
 
 ### Surveillance and Security Systems
+
 Objective- Enhance security by monitoring and analyzing video feeds.
 Examples- Facial recognition for access control, and detecting unusual behavior in surveillance footage.
 
 ### Photo Editing Software
+
 Objective- Provide tools for modifying and enhancing images.
 Examples- Adjust brightness, contrast, color balance, and applying filters in applications like Photoshop.
 
 ### Image-to-Text Conversion
+
 Objective- Extract and interpret text from images.
 Examples- Optical Character Recognition (OCR) for digitizing printed documents, and reading text from scanned forms.
 
@@ -81,12 +92,15 @@ Examples- Optical Character Recognition (OCR) for digitizing printed documents, 
 
 # Types of Image Processing Techniques
 **Filtering** - The pixels in an image are directly subjected to the filtering technique. Generally speaking, a mask is added in size to have a certain center pixel. The mask is positioned on the image so that its center crosses every pixel in the image.
+
 ![Screenshot 2024-09-05 233711](https://github.com/user-attachments/assets/a6b9d7be-083b-4fe4-828c-0bd70a529d81)
 
 **Segmentation** - In order to assist with object detection and related tasks, image segmentation is a computer vision approach that divides a digital image into distinct groupings of pixels, or image segments.
+
 ![Screenshot 2024-09-05 233817](https://github.com/user-attachments/assets/07a04720-0036-4d01-aaa1-97ca6f3affee)
 
 **Edge Detection** - An essential method for locating and recognizing the borders or edges of objects in an image is edge detection. It is employed to extract the outlines of objects that are present in an image as well as to recognize and detect discontinuities in the image intensity.
+
 ![Screenshot 2024-09-05 233916](https://github.com/user-attachments/assets/2ea78072-ae40-48f6-99c7-e7d70353a264)
 
 
@@ -99,30 +113,39 @@ Autonomous vehicles leverage several key techniques and technologies to achieve 
 **1. Computer Vision**
 Object Detection and Recognition- Uses algorithms like YOLO (You Only Look Once) and SSD (Single Shot MultiBox Detector) to identify and classify objects in the environment.
 Semantic Segmentation- Employs models like DeepLab and U-Net to classify each pixel in an image, helping to understand the scene's context.
+
 **2. Sensor Fusion**
 Data Integration- Combines data from multiple sensors (cameras, LiDAR, radar) to create a comprehensive and accurate view of the surroundings.
 Kalman Filters- Used for estimating the state of dynamic systems by combining noisy sensor measurements with predictions.
+
 **3. Localization**
 Global Positioning System (GPS)- Provides real-time location data.
 Simultaneous Localization and Mapping (SLAM)- Builds and updates maps of an environment while tracking the vehicle’s position within it.
+
 **4. Path Planning and Decision-Making**
 A and Dijkstra’s Algorithms Commonly used for finding the shortest path in known environments.
 Rapidly-exploring Random Trees (RRT)- Used for path planning in complex, dynamic environments.
 Model Predictive Control (MPC)- Optimizes vehicle control actions by predicting future states based on current conditions.
+
 **5. Control Systems**
 PID Controllers- Proportional-Integral-Derivative controllers manage the vehicle’s speed, steering, and braking for smooth driving.
 Adaptive Cruise Control- Adjusts the vehicle’s speed based on the distance from the car in front.
+
 **6. Machine Learning and Deep Learning**
 Convolutional Neural Networks (CNNs)- Used for image recognition and feature extraction from camera feeds.
 Reinforcement Learning- Helps in training autonomous vehicles to make decisions by simulating different scenarios and learning from them.
+
 **7. Radar and LiDAR**
 Radar- Measures the speed and distance of objects using radio waves. Effective in various weather conditions.
 LiDAR- Uses laser pulses to create high-resolution 3D maps of the environment, allowing precise distance measurements.
+
 **8. High-Definition Maps**
 Detailed Mapping- Provides detailed road information such as lane markings, road signs, and intersections. These maps are often updated with real-time data.
+
 **9. Simulation and Testing**
 Virtual Environments- Use simulations to test and validate autonomous driving algorithms in controlled and diverse scenarios.
 Hardware-in-the-Loop (HIL) Testing- Combines real hardware with simulation to test systems under realistic conditions.
+
 **10. Ethical and Safety Frameworks**
 Decision-Making Protocols- Develop frameworks to ensure the vehicle makes safe and ethical decisions in complex situations.
 Fail-Safe Mechanisms- Implement backup systems and safety protocols to handle potential failures or emergencies.
@@ -228,21 +251,30 @@ Edge computing offers several benefits when processing images directly on edge d
 
 **1. Reduced Latency:**
 Real-Time Processing: By processing data locally on the edge device, you minimize the time required for data to travel to and from a central server. This results in faster response times, which is crucial for real-time applications like AR and autonomous vehicles where split-second decisions are needed.
+
 **2. Lower Bandwidth Usage:**
 Data Transmission: Local processing reduces the amount of data that needs to be transmitted over networks, as only relevant or processed information is sent to central servers or other devices. This is particularly beneficial for bandwidth-constrained environments and reduces network congestion.
+
 **3. Enhanced Privacy and Security:**
 Data Security: Processing sensitive information locally helps to keep data private and secure, as it avoids transmitting potentially sensitive data over networks. This is important for applications involving personal information or security-sensitive operations.
+
 **4. Improved Reliability and Resilience:**
 Offline Functionality: Edge devices can continue to operate and make decisions even if they lose connection to central servers or networks, ensuring that critical functions are maintained without relying on continuous cloud connectivity.
+
 **5. Cost Efficiency:**
 Reduced Cloud Costs: Local processing can decrease the need for extensive cloud computing resources, leading to cost savings in data storage and processing. It also minimizes data transfer costs associated with cloud services.
+
 **6. Scalability:**
 Distributed Processing: By distributing processing tasks across many edge devices, you can handle larger volumes of data and scale applications more effectively without overloading central servers.
+
 **7. Enhanced User Experience:**
 Responsive Applications: Applications that rely on edge computing can offer smoother and more responsive experiences, as processing delays and network latency are minimized. This is crucial for immersive AR experiences and real-time decision-making in autonomous vehicles.
+
 **8. Optimized Resource Utilization:**
 Efficient Processing: Edge devices are often optimized for specific tasks, such as image processing or sensor data analysis, leading to more efficient use of computational resources compared to general-purpose cloud servers.
+
 **9. Localized Data Analytics:**
 Context-Aware Processing: Edge devices can perform localized data analytics, making decisions based on immediate context and environment, which is beneficial for adaptive and intelligent systems like autonomous driving and AR applications.
+
 **10. Scalable IoT Solutions:**
 Integration with IoT: Edge computing is well-suited for Internet of Things (IoT) applications, where numerous devices collect and process data locally, leading to more efficient and scalable IoT ecosystems.
