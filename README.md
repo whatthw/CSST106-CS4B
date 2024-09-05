@@ -130,13 +130,37 @@ Fail-Safe Mechanisms: Implement backup systems and safety protocols to handle po
 # Implementation Creation
 
 Edge detection is crucial in autonomous vehicles for tasks such as lane detection, obstacle recognition, and road sign identification. It helps in understanding the structure and boundaries within the vehicle’s environment, which is essential for navigation and safety.
-
 Edge Detection in Autonomous Vehicles
-1. Importing Libraries:
+
 cv2 (OpenCV): Provides powerful functions for image processing and computer vision, including edge detection.
 matplotlib.pyplot (imported as plt): Used for visualizing processed images and results, such as plotting the detected edges.
 google.colab.patches (cv2_imshow): An optional library for displaying images in Google Colab notebooks (not essential for core functionality but useful for visualization in Colab).
+
+## Edge Detection Using OpenCV's Canny Algorithm
+
+Edge detection is crucial for tasks like lane detection and obstacle recognition in autonomous vehicles. The following Python code demonstrates how to apply Canny edge detection to an image using OpenCV, with added noise reduction through Gaussian blur.
+
+
+```python
 import cv2
 import numpy as np
 from matplotlib import pyplot as plt
-from google.colab.patches import cv2_imshow
+from google.colab.patches import cv2_imshow  # For displaying images in Google Colab
+
+# Load the image
+img = cv2.imread("city-road.jpg")  # Replace with your image path
+
+# Convert the image to grayscale
+gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+
+# Apply Gaussian blur to reduce noise
+blurred = cv2.GaussianBlur(gray, (5, 5), 0)
+
+# Detect edges using Canny edge detection
+edges = cv2.Canny(blurred, 100, 200)
+# Display the original image and the edge-detected image
+plt.subplot(121), plt.imshow(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))  # Convert BGR to RGB for display
+plt.title('Original Image'), plt.xticks([]), plt.yticks([])
+plt.subplot(122), plt.imshow(edges, cmap='gray')
+plt.title('Edge Detected Image'), plt.xticks([]), plt.yticks([])
+plt.show()
