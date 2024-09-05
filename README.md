@@ -1,5 +1,8 @@
 # CSST106-CS4B
 
+
+https://github.com/user-attachments/assets/7edf1f21-5b42-4c83-9657-3517f9910ae9
+
 Uploading comppp.mp4…
 # Intoduction to Computer Vision 
 Computer Vision is a field of artificial intelligence that deals with teaching computers to understand and interpret visual information, such as images and videos. It's essentially giving machines the ability to "see" and make sense of the world around them.
