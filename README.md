@@ -78,3 +78,65 @@ Examples: Optical Character Recognition (OCR) for digitizing printed documents, 
 #### Machine Learning: Machine learning algorithms are enhancing Traditional image processing methods that can automatically learn from data and improve performance over time. For example, machine learning models can classify images or detect objects with high accuracy.
 
 #### Deep Learning: Deep learning, a subset of machine learning, utilizes neural networks with many layers (e.g., Convolutional Neural Networks, or CNNs) to perform tasks such as image recognition and segmentation. Deep learning models can automatically extract features and learn complex patterns from large datasets, making them powerful tools in image processing.
+
+# Types of Image Processing Techniques
+Filtering - The pixels in an image are directly subjected to the filtering technique. Generally speaking, a mask is added in size to have a certain center pixel. The mask is positioned on the image so that its center crosses every pixel in the image.
+![Screenshot 2024-09-05 233711](https://github.com/user-attachments/assets/a6b9d7be-083b-4fe4-828c-0bd70a529d81)
+
+Segmentation - In order to assist with object detection and related tasks, image segmentation is a computer vision approach that divides a digital image into distinct groupings of pixels, or image segments.
+![Screenshot 2024-09-05 233817](https://github.com/user-attachments/assets/07a04720-0036-4d01-aaa1-97ca6f3affee)
+
+Edge Detection - An essential method for locating and recognizing the borders or edges of objects in an image is edge detection. It is employed to extract the outlines of objects that are present in an image as well as to recognize and detect discontinuities in the image intensity.
+![Screenshot 2024-09-05 233916](https://github.com/user-attachments/assets/2ea78072-ae40-48f6-99c7-e7d70353a264)
+
+
+# Case Study Selection: AI Application: Autonomous Vehicles
+
+Autonomous vehicles, or self-driving cars, use a variety of AI technologies to navigate and operate safely without human intervention. Here's a brief overview of the key AI applications in autonomous vehicles:
+
+Autonomous vehicles leverage several key techniques and technologies to achieve safe and efficient self-driving. Here are some of the most important ones:
+
+1. Computer Vision:
+Object Detection and Recognition: Uses algorithms like YOLO (You Only Look Once) and SSD (Single Shot MultiBox Detector) to identify and classify objects in the environment.
+Semantic Segmentation: Employs models like DeepLab and U-Net to classify each pixel in an image, helping to understand the scene's context.
+2. Sensor Fusion:
+Data Integration: Combines data from multiple sensors (cameras, LiDAR, radar) to create a comprehensive and accurate view of the surroundings.
+Kalman Filters: Used for estimating the state of dynamic systems by combining noisy sensor measurements with predictions.
+3. Localization:
+Global Positioning System (GPS): Provides real-time location data.
+Simultaneous Localization and Mapping (SLAM): Builds and updates maps of an environment while tracking the vehicle’s position within it.
+4. Path Planning and Decision-Making:
+A and Dijkstra’s Algorithms:* Commonly used for finding the shortest path in known environments.
+Rapidly-exploring Random Trees (RRT): Used for path planning in complex, dynamic environments.
+Model Predictive Control (MPC): Optimizes vehicle control actions by predicting future states based on current conditions.
+5. Control Systems:
+PID Controllers: Proportional-Integral-Derivative controllers manage the vehicle’s speed, steering, and braking for smooth driving.
+Adaptive Cruise Control: Adjusts the vehicle’s speed based on the distance from the car in front.
+6. Machine Learning and Deep Learning:
+Convolutional Neural Networks (CNNs): Used for image recognition and feature extraction from camera feeds.
+Reinforcement Learning: Helps in training autonomous vehicles to make decisions by simulating different scenarios and learning from them.
+7. Radar and LiDAR:
+Radar: Measures the speed and distance of objects using radio waves. Effective in various weather conditions.
+LiDAR: Uses laser pulses to create high-resolution 3D maps of the environment, allowing precise distance measurements.
+8. High-Definition Maps:
+Detailed Mapping: Provides detailed road information such as lane markings, road signs, and intersections. These maps are often updated with real-time data.
+9. Simulation and Testing:
+Virtual Environments: Use simulations to test and validate autonomous driving algorithms in controlled and diverse scenarios.
+Hardware-in-the-Loop (HIL) Testing: Combines real hardware with simulation to test systems under realistic conditions.
+10. Ethical and Safety Frameworks:
+Decision-Making Protocols: Develop frameworks to ensure the vehicle makes safe and ethical decisions in complex situations.
+Fail-Safe Mechanisms: Implement backup systems and safety protocols to handle potential failures or emergencies.
+
+# Implementation Creation
+
+Edge detection is crucial in autonomous vehicles for tasks such as lane detection, obstacle recognition, and road sign identification. It helps in understanding the structure and boundaries within the vehicle’s environment, which is essential for navigation and safety.
+
+Edge Detection in Autonomous Vehicles
+1. Importing Libraries:
+cv2 (OpenCV): Provides powerful functions for image processing and computer vision, including edge detection.
+matplotlib.pyplot (imported as plt): Used for visualizing processed images and results, such as plotting the detected edges.
+google.colab.patches (cv2_imshow): An optional library for displaying images in Google Colab notebooks (not essential for core functionality but useful for visualization in Colab).
+import cv2
+import numpy as np
+from matplotlib import pyplot as plt
+from google.colab.patches import cv2_imshow
