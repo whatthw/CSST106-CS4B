@@ -30,7 +30,7 @@ Objective- Extract meaningful attributes or characteristics from an image that c
 Techniques- Edge detection (e.g., Canny edge detector), corner detection (e.g., Harris corner detector), texture analysis.
 Applications- Face recognition, object tracking, and scene classification.
 
-Geometric Modifications
+### Geometric Modifications
 
 Objective- Transform images in terms of scaling, rotation, or warping to correct distortions or align them for further processing.
 Techniques- Affine transformations, perspective corrections, and image registration.
